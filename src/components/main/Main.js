@@ -75,7 +75,7 @@ const Main = () => {
                 <div className="pie-chart">
                     <div className="piecharts-right">
                             
-                            <h4>Total Applications</h4>
+                            <h4>Referals</h4>
 
                             <div className="card1">
                                 <p>Application</p>
