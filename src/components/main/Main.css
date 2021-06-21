@@ -121,6 +121,80 @@ main{
     box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
 }
 
+.title-intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
+    justify-content: center;
+}
+.card-detail > span{
+    font-size: 25px;
+}
+.card-detail1 > span{
+    font-size: 25px;
+}
+.card-detail2 > span{
+    font-size: 25px;
+}
+.card-detail3 > span{
+    font-size: 25px;
+}
+
+.card-detail1{
+    border-right: 0.2px solid lightgray;
+}
+.card-detail2{
+    border-right: 0.2px solid lightgray;
+}
+.card-detail3{
+    border-right: 0.2px solid lightgray;
+}
+
+.middle-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.blue-btn{
+    border: none;
+    background-color: rgb(40, 136, 173);
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blue-btn:hover{
+    background-color: rgba(12, 202, 183, 0.808);
+}
+.red-btn{
+    border: none;
+    background-color: rgb(212, 81, 81);
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.red-btn:hover{
+    background-color: rgb(238, 67, 37);
+}
+.rise{
+    color: tomato;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 855px){
     .main-cards {
         grid-template-columns: 1fr;
@@ -129,6 +203,10 @@ main{
     }
 
     .charts {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    .pie-chart {
         grid-template-columns: 1fr;
         margin-top: 30px;
     }

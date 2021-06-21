@@ -2,6 +2,8 @@ import React from 'react';
 import './Main.css';
 import Chart from '../charts/Chart';
 import PieChart from '../piechart/PieChart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationArrow, } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => {
     return (
@@ -29,11 +31,11 @@ const Main = () => {
                             <span className="font-bold text-title">1501</span>
                         </div>
                     </div>
-                
+
                 </div>
-                
+
                 <div className="charts">
-                    
+
                     <div className="charts-left">
                         <div className="charts-left-title">
                             <div>
@@ -46,63 +48,80 @@ const Main = () => {
                     </div>
 
                     <div className="charts-right-cards">
-                            
-                            <h4>Total Applications</h4>
 
-                            <div className="card1">
-                                <p>Application</p>
-                            </div>
+                        <h4>Total Applications</h4>
 
-                            <div className="card2">
-                                <p>Short Liked</p>
-                            </div>
+                        <div className="card1">
+                            <p>Application</p>
+                        </div>
 
-                            <div className="card3">
-                                <p>Rejected</p>
-                            </div>
+                        <div className="card2">
+                            <p>Short Liked</p>
+                        </div>
 
-                            <div className="card4">
-                                <p>On hold</p>
-                            </div>
+                        <div className="card3">
+                            <p>Rejected</p>
+                        </div>
 
-                            <div className="card5">
-                                <p>Presented</p>
-                            </div>
+                        <div className="card4">
+                            <p>On hold</p>
+                        </div>
+
+                        <div className="card5">
+                            <p>Presented</p>
+                        </div>
                     </div>
 
                 </div>
 
                 <div className="pie-chart">
                     <div className="piecharts-right">
-                            
-                            <h4>Referals</h4>
 
-                            <div className="card1">
-                                <p>Application</p>
+                        <div className="title-intro">
+                            <div>
+                                <h4>Referals and Campaign Starts</h4>
                             </div>
+                            <div>
+                                <p className="rise"><FontAwesomeIcon className="rise-arrow" icon={faLocationArrow} /> 40 Campaigns sent in total</p>
+                                <h4>4 Campaigns sent in Last Month</h4>
+                            </div>
+                        </div>
 
-                            <div className="card2">
-                                <p>Short Liked</p>
+                        <div className="middle-card">
+                            <div className="card-detail1 ">
+                                <p className="text-primary-p">User's Reached</p>
+                                <span className="font-bold text-title">7956</span>
                             </div>
+                            <div className="card-detail2">
+                                <p className="text-primary-p">Referals</p>
+                                <span className="font-bold text-title">0662</span>
+                            </div>
+                            <div className="card-detail3">
+                                <p className="text-primary-p">Shares</p>
+                                <span className="font-bold text-title">1478</span>
+                            </div>
+                            <div className="card-detail">
+                                <p className="text-primary-p">Applications</p>
+                                <span className="font-bold text-title">0564</span>
+                            </div>
+                        </div>
 
-                            <div className="card3">
-                                <p>Rejected</p>
+                        <div className="middle-button">
+                            <div >
+                                <button className="blue-btn">Start a new Campaign now</button>
                             </div>
+                            <div >
+                                <button className="red-btn">Push all running Campaigns</button>
+                            </div>
+                        </div>
 
-                            <div className="card4">
-                                <p>On hold</p>
-                            </div>
-
-                            <div className="card5">
-                                <p>Presented</p>
-                            </div>
                     </div>
 
                     <div className="piecharts-left">
-                            
-                            <h4>Open Positions By Departments</h4>
 
-                            <PieChart></PieChart>
+                        <h4>Open Positions By Departments</h4>
+
+                        <PieChart></PieChart>
                     </div>
 
                 </div>
