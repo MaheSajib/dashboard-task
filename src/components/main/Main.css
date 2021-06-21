@@ -1,0 +1,135 @@
+main{
+    background-color: black;
+    grid-area: main;
+    overflow-y: auto;
+}
+.main-container{
+    padding: 20px 35px;
+}
+.main-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    border: 0.2px solid lightgray;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px -13px #ffffff;
+}
+.card-inner{
+    align-items: center;
+    justify-content: space-between;
+}
+.card-inner > span {
+    font-size: 25px;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.charts-left {
+    padding: 25px;
+    border-radius: 5px;
+    background: black;
+    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+}
+
+.charts-left-title {
+    align-items: center;
+    justify-content: space-between;
+}
+.charts-left-title > div > h4{
+    color: white;
+    margin-bottom: 5px;
+}
+.charts-left-title > div > p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaad;
+}
+
+.charts-right-cards{
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+}
+
+.charts-right-cards h4{
+    color: white;
+}
+
+.charts-right-cards > div {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.card1 {
+    color: skyblue;
+}
+.card2 {
+    color: rgb(40, 136, 173);
+}
+.card3 {
+    color: rgb(212, 81, 81);
+}
+.card4 {
+    color: rgb(255, 178, 126);
+}
+.card5 {
+    color: rgb(125, 72, 209);
+}
+
+.pie-chart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.piecharts-right{
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+}
+
+.piecharts-right h4{
+    color: white;
+}
+.piecharts-left h4{
+    color: white;
+}
+.piecharts-left{
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+}
+
+@media only screen and (max-width: 855px){
+    .main-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+}
