@@ -67,8 +67,8 @@ body{
   grid-template-columns: 0.18fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas: 
-    "sidebar nav nav nav"
-    "sidebar main main main";
+    "sidebar nav nav nav nav"
+    "sidebar main main main submain";
 }
 
 @media only screen and (max-width: 978px) {

@@ -3,7 +3,7 @@ import './Main.css';
 import Chart from '../charts/Chart';
 import PieChart from '../piechart/PieChart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationArrow, } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faLocationArrow, } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => {
     return (
@@ -15,6 +15,7 @@ const Main = () => {
                         <div className="card-inner">
                             <p className="text-primary-p">Total Applications</p>
                             <span className="font-bold text-title">7956</span>
+                            <p className="text-purple"><FontAwesomeIcon icon={faArrowUp}/> +3.59%</p>
                         </div>
                     </div>
                     <div className="card">
@@ -22,6 +23,7 @@ const Main = () => {
                         <div className="card-inner">
                             <p className="text-primary-p">ShortListed Candidates</p>
                             <span className="font-bold text-title">4658</span>
+                            <p className="text-purple"><FontAwesomeIcon icon={faArrowUp}/> -06%</p>
                         </div>
                     </div>
                     <div className="card">
@@ -29,6 +31,7 @@ const Main = () => {
                         <div className="card-inner">
                             <p className="text-primary-p">Total Applications</p>
                             <span className="font-bold text-title">1501</span>
+                            <p className="text-red"><FontAwesomeIcon icon={faArrowDown}/> -04%</p>
                         </div>
                     </div>
 
@@ -90,18 +93,30 @@ const Main = () => {
                         <div className="middle-card">
                             <div className="card-detail1 ">
                                 <p className="text-primary-p">User's Reached</p>
+                                <br />
+                                <p className="text-blue"><FontAwesomeIcon icon={faArrowUp}/> +3.59%</p>
+                                <br />
                                 <span className="font-bold text-title">7956</span>
                             </div>
                             <div className="card-detail2">
                                 <p className="text-primary-p">Referals</p>
+                                <br />
+                                <p className="text-blue"><FontAwesomeIcon icon={faArrowUp}/> +3.59%</p>
+                                <br />
                                 <span className="font-bold text-title">0662</span>
                             </div>
                             <div className="card-detail3">
                                 <p className="text-primary-p">Shares</p>
+                                <br />
+                                <p className="text-blue"><FontAwesomeIcon icon={faArrowUp}/> +3.59%</p>
+                                <br />
                                 <span className="font-bold text-title">1478</span>
                             </div>
-                            <div className="card-detail">
+                            <div className="card-detail4">
                                 <p className="text-primary-p">Applications</p>
+                                <br />
+                                <p className="text-blue"><FontAwesomeIcon icon={faArrowUp}/> +3.59%</p>
+                                <br />
                                 <span className="font-bold text-title">0564</span>
                             </div>
                         </div>

@@ -19,10 +19,10 @@ main{
     justify-content: space-around;
     height: 70px;
     padding: 25px;
-    border: 0.2px solid lightgray;
+    border: 0.2px solid gray;
     border-radius: 5px;
     background-color: black;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px -13px #ffffff;
+    box-shadow: 5px 5px 13px gray, -5px -5px -13px gray;
 }
 .card-inner{
     align-items: center;
@@ -30,6 +30,14 @@ main{
 }
 .card-inner > span {
     font-size: 25px;
+}
+
+.card:hover{
+    background-color: rgb(40, 136, 173);
+    border: none;
+}
+.card:hover p{
+    color: white;
 }
 
 .charts {
@@ -43,7 +51,7 @@ main{
     padding: 25px;
     border-radius: 5px;
     background: black;
-    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+    box-shadow: 1px 1px 1px gray, -1px -1px 3px gray;
 }
 
 .charts-left-title {
@@ -64,7 +72,7 @@ main{
     background-color: black;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+    box-shadow: 1px 1px 1px gray, -1px -1px 3px gray;
 }
 
 .charts-right-cards h4{
@@ -105,7 +113,7 @@ main{
     background-color: black;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+    box-shadow: 1px 1px 1px gray, -1px -1px 3px gray;
 }
 
 .piecharts-right h4{
@@ -118,7 +126,7 @@ main{
     background-color: black;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #ededed, -1px -1px 3px #ffffff;
+    box-shadow: 1px 1px 1px gray, -1px -1px 3px gray;
 }
 
 .title-intro{
@@ -135,6 +143,7 @@ main{
 }
 .card-detail > span{
     font-size: 25px;
+    text-align: center;
 }
 .card-detail1 > span{
     font-size: 25px;
@@ -145,15 +154,37 @@ main{
 .card-detail3 > span{
     font-size: 25px;
 }
+.card-detail4 > span{
+    font-size: 25px;
+}
 
 .card-detail1{
     border-right: 0.2px solid lightgray;
+    text-align: center;
 }
 .card-detail2{
     border-right: 0.2px solid lightgray;
+    text-align: center;
 }
 .card-detail3{
     border-right: 0.2px solid lightgray;
+    text-align: center;
+}
+.card-detail4{
+    text-align: center;
+}
+.text-blue{
+    color: rgb(40, 136, 173);
+    font-size: 12px;
+}
+
+.text-purple{
+    color: rgb(135, 0, 177);
+    font-size: 12px;
+}
+.text-red{
+    color: rgb(212, 81, 81);
+    font-size: 12px;
 }
 
 .middle-button{
