@@ -61,10 +61,26 @@ body{
   color: #3b9668;
 }
 
+.bg-skyblue{
+  background-color: skyblue;
+}
+.bg-blue{
+  background-color: rgb(40, 136, 173);
+}
+.bg-red{
+  background-color: rgb(212, 81, 81);
+}
+.bg-yellow{
+  background-color: rgb(255, 178, 126);
+}
+.bg-purple{
+  background-color: rgb(125, 72, 209);
+}
+
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.18fr 1fr 1fr 1fr;
+  grid-template-columns: 0.20fr 1fr 1fr 1fr 0.8fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas: 
     "sidebar nav nav nav nav"

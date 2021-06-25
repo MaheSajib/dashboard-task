@@ -2,6 +2,7 @@ import { useState } from "react";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar"
 import Sidebar from "./components/sidebar/Sidebar";
+import SubMain from "./components/submain/SubMain";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
     <div className="container">
       <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
       <Main />
+      <SubMain></SubMain>
       <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}></Sidebar>
     </div>
   );

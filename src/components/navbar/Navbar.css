@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 0 30px 0 30px;
 }
-.navbar h2{
+.navbar h2, p{
     color: white;
 }
 .search{

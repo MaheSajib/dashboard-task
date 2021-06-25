@@ -1,14 +1,14 @@
 import "./Navbar.css";
-import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSearch, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({ sidebarOpen , openSidebar}) => {
+    let date = new Date().toUTCString().slice(0, 16);
     return (
         <nav className="navbar">
             <div className="nav-Icon" onClick={() => openSidebar()}>
                 <h2>Dashboard</h2>
-                <FontAwesomeIcon icon={faBars} />
+                <p >{date}</p>
             </div>
             <div className="navbar-left">
                 

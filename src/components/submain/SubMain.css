@@ -1,0 +1,35 @@
+.sub-main-container{
+    background-color: black;
+    grid-area: submain;
+    overflow-y: auto;
+    border: none;
+}
+.dash-img img{
+    display: grid;
+    grid-template-columns: 0.8fr;
+    height: 100%;
+    width: 100%;
+}
+.dash-img p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.new-application{
+    color: white;
+    margin-top: 10px;
+    
+}
+.infoTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info1{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
